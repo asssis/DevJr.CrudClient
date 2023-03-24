@@ -1,0 +1,111 @@
+﻿@model IEnumerable<DevJr.CrudClient.Infra.Database.Domain.Pessoa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="card container mt-2 mb-2">
+    <h1>Consulta Cliente</h1>
+    <form class="row">
+        <div class="form-group col-md-4">
+            CPF:
+            <input type="text" name="Cpf" class="form-control" placeholder="CPF" value="@ViewBag.filtro.Cpf">
+        </div>
+
+        <div class="form-group col-md-4">
+            Nome:
+            <input type="text" name="Nome" class="form-control" placeholder="Nome"  value="@ViewBag.filtro.Nome">
+        </div>
+
+        <div class="form-group col-md-4">
+            Sexo:
+            <input type="text" name="Sexo" class="form-control" placeholder="Sexo" value="@ViewBag.filtro.Sexo">
+        </div>
+
+        <div class="form-group col-md-4">
+            Estado:
+            <input type="text" name="Estado" class="form-control" placeholder="Estado"  value="@ViewBag.filtro.Estado">
+        </div>
+
+        <div class="form-group col-md-4">
+            Cidade:
+            <input type="text" name="Cidade" class="form-control" placeholder="Cidade" value="@ViewBag.filtro.Cidade">
+        </div>
+        <div class="col-md-12 mb-3 text-right">
+            <button type="submit" class="btn btn-primary">Consultar</button>
+            <button type="button" class="btn">Limpar</button>
+        </div>
+    </form>
+</div>
+<div class="card container mt-2 mb-2">
+    <h1>Resultado da Pesquisa</h1>
+
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>
+                    Cliente
+                </th>
+                <th>
+                    CPF
+                </th>
+                <th>
+                    Data Nasc.
+                </th>
+                <th>
+                    Estado
+                </th>
+                <th>
+                    Cidade
+                </th>
+                <th>
+                    Sexo
+                </th> 
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success col-md-12">Editar</a>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger col-md-12">Excluir</a>
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+                <td>
+                    @{var dtNascimento = item.DtNascimento.ToShortDateString();}
+                    @Html.DisplayFor(m => dtNascimento) 
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+                <td>
+                    @{var Sexo = item.DescSexo();}
+                    @Html.DisplayFor(m => Sexo) 
+                </td> 
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary float-right">Adicionar</a>
+    </p>
+
+</div>

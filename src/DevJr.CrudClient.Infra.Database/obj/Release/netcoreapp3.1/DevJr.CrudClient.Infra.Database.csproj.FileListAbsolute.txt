@@ -1,0 +1,11 @@
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\bin\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.deps.json
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\bin\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.runtimeconfig.json
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\bin\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.runtimeconfig.dev.json
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\bin\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.dll
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\bin\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.pdb
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\obj\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.AssemblyInfoInputs.cache
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\obj\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.AssemblyInfo.cs
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\obj\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.csproj.CoreCompileInputs.cache
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\obj\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.dll
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\obj\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.pdb
+C:\Users\asjus\projetos\DevJr.CrudClient\src\DevJr.CrudClient.Infra.Database\obj\Release\netcoreapp3.1\DevJr.CrudClient.Infra.Database.genruntimeconfig.cache
